@@ -1,6 +1,8 @@
 Tezos Example Box
 =================
 
+**Note: Experimental. Currently designed for demo purposes only.**
+
 This box contains a simple `SimpleStorage` contract to display the basics of Tezos
 integration with Truffle.
 
