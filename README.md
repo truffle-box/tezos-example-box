@@ -22,5 +22,6 @@ integration with Truffle.
     ```
     truffle compile
     truffle migrate
+    truffle test
     ```
 
