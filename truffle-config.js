@@ -5,7 +5,7 @@ module.exports = {
   // for more details on how to specify configuration options!
   networks: {
     development: {
-      host: "https://rpcalpha.tzbeta.net",
+      host: "https://rpctest.tzbeta.net",
       port: 80,
       network_id: "*",
       secret,
