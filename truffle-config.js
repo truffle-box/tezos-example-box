@@ -5,7 +5,7 @@ module.exports = {
   // for more details on how to specify configuration options!
   networks: {
     development: {
-      host: "https://rpctest.tzbeta.net",
+      host: "https://api.tez.ie/rpc/babylonnet", // "https://rpctest.tzbeta.net",
       port: 80,
       network_id: "*",
       secret,
