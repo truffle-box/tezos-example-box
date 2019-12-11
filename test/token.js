@@ -1,7 +1,7 @@
 const Token = artifacts.require("Token");
 
 contract('Token', accounts => {
-  it("...should store account address, token balance, & allowances", async() => {
+  it("...should store account address, token balance, & allowances.", async() => {
     const tokenInstance = await Token.deployed();
     const storage = await tokenInstance.storage();
     const storedAccountInfo = await storage.accounts.get(accounts[0]);
