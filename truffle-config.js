@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     development: {
       host: "https://api.tez.ie/rpc/babylonnet",
-      port: 80,
+      port: 443,
       network_id: "*",
       secret,
       mnemonic,
@@ -16,7 +16,7 @@ module.exports = {
     },
     zeronet: {
       host: "https://rpczero.tzbeta.net",
-      port: 80,
+      port: 443,
       network_id: "*",
       secret,
       mnemonic,
