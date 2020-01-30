@@ -6,6 +6,7 @@ Tezos Example Box
 This box contains a `Counter` and simple `SimpleStorage` contract to display the basics of Tezos
 integration with Truffle.
 
+
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/v17.12/install/)
@@ -26,7 +27,54 @@ integration with Truffle.
     truffle unbox tezos-example
     ```
 
-3. Compile and migrate the smart contract.
+
+## Configuring Wallets
+
+- A test faucet key can be obtained from https://faucet.tzalpha.net/. Once saved, it can be imported inside `truffle-config.js`:
+
+  ```javascript
+
+  const { mnemonic, secret, password: passphrase, email } = require("./faucet.json");
+
+  module.exports = {
+    networks: {
+      development: {
+        host: "https://api.tez.ie/rpc/babylonnet",
+        port: 443,
+        network_id: "*",
+        secret,
+        mnemonic,
+        passphrase,
+        email,
+        type: "tezos"
+      }
+    }
+  };
+
+  ```
+
+- `truffle@alphaTez` also supports importing an activated account's secret key:
+
+  ```javascript
+
+  module.exports = {
+    networks: {
+      development: {
+        host: "https://api.tez.ie/rpc/babylonnet",
+        port: 443,
+        network_id: "*",
+        secretKey: "edsk..." // private key
+        type: "tezos"
+      }
+    }
+  };
+  ```
+
+
+## Usage
+
+- Compile, migrate, and test the smart contracts.
+
     ```
     truffle compile
     truffle migrate
