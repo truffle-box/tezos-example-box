@@ -39,7 +39,7 @@ integration with Truffle.
   module.exports = {
     networks: {
       development: {
-        host: "https://api.tez.ie/rpc/babylonnet",
+        host: "https://babylonnet.smartpy.io",
         port: 443,
         network_id: "*",
         secret,
@@ -60,7 +60,7 @@ integration with Truffle.
   module.exports = {
     networks: {
       development: {
-        host: "https://api.tez.ie/rpc/babylonnet",
+        host: "https://babylonnet.smartpy.io",
         port: 443,
         network_id: "*",
         secretKey: "edsk..." // private key

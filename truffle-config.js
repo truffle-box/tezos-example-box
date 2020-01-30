@@ -3,13 +3,25 @@ module.exports = {
   // for more details on how to specify configuration options!
   networks: {
     development: {
-      host: "https://api.tez.ie/rpc/babylonnet",
+      host: "https://babylonnet.smartpy.io",
+      port: 443,
+      network_id: "*",
+      type: "tezos"
+    },
+    carthagenet: {
+      host: "https://carthagenet.smartpy.io",
+      port: 443,
+      network_id: "*",
+      type: "tezos"
+    },
+    mainnet: {
+      host: "https://mainnet.smartpy.io",
       port: 443,
       network_id: "*",
       type: "tezos"
     },
     zeronet: {
-      host: "https://rpczero.tzbeta.net",
+      host: "https://zeronet.smartpy.io",
       port: 443,
       network_id: "*",
       type: "tezos"
