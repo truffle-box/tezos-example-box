@@ -1,11 +1,18 @@
 {
   "ignore": [
     "README.md",
+    "LICENSE",
     "test/.gitkeep"
   ],
   "commands": {
     "Compile": "truffle compile",
     "Migrate": "truffle migrate",
-    "Test contracts": "truffle test"
+    "Test contracts": "truffle test",
+    "Start sandbox": "npm run start-sandbox",
+    "Kill sandbox": "npm run kill-sandbox",
+    "Restart sandbox": "npm run restart-sandbox"
+  },
+  "hooks": {
+    "post-unpack": "npm install"
   }
 }
