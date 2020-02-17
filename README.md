@@ -80,7 +80,7 @@ npm run restart-sandbox
 
   ```javascript
 
-  const { mnemonic, secret, password: passphrase, email } = require("./faucet.json");
+  const { mnemonic, secret, password, email } = require("./faucet.json");
 
   module.exports = {
     networks: {
@@ -90,7 +90,7 @@ npm run restart-sandbox
         network_id: "*",
         secret,
         mnemonic,
-        passphrase,
+        password,
         email,
         type: "tezos"
       }
