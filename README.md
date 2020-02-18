@@ -17,9 +17,9 @@ integration with Truffle.
 
 ## Installation
 
-1. Install Truffle globally. Make sure you install `truffle@alphaTez`.
+1. Install Truffle globally. Make sure you install `truffle@tezos`.
   ```shell
-  npm install -g truffle@alphaTez
+  npm install -g truffle@tezos
   ```
 
 2. Download the box. This also takes care of installing the necessary dependencies.
@@ -99,7 +99,7 @@ npm run restart-sandbox
 
   ```
 
-- `truffle@alphaTez` also supports importing an activated account's secret key:
+- `truffle@tezos` also supports importing an activated account's secret key:
 
   ```javascript
 
