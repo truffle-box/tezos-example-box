@@ -11,12 +11,6 @@ module.exports = {
       secretKey: alice.sk,
       type: "tezos"
     },
-    babylonnet: {
-      host: "https://babylonnet.smartpy.io",
-      port: 443,
-      network_id: "*",
-      type: "tezos"
-    },
     carthagenet: {
       host: "https://carthagenet.smartpy.io",
       port: 443,
