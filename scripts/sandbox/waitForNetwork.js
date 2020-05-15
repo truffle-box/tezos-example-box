@@ -13,7 +13,7 @@ Tezos.setProvider({
 module.exports = ((tezos) => {
     console.log('Waiting for the sandbox network to be ready');    
     promiseRetry((retry, number) => Tezos.rpc.getBlockHeader({
-        block: 2
+        block: 1
     })
     .then(() => console.log('Sandbox network ready!'))
     .catch(retry), { retries: 8 });
