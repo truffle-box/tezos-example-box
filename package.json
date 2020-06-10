@@ -1,17 +1,13 @@
 {
   "name": "tezos-example",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tezos Example Box =================",
   "dependencies": {},
   "devDependencies": {
-    "@taquito/taquito": "^6.2.0-beta.1",
-    "promise-retry": "^1.1.1"
+    "ganache-cli": "^6.10.0-tezos.1"
   },
   "scripts": {
-    "wait-for-sandbox": "node ./scripts/sandbox/waitForNetwork.js",
-    "start-sandbox": "bash ./scripts/sandbox/start_sandbox.sh && npm run wait-for-sandbox",
-    "kill-sandbox": "bash ./scripts/sandbox/kill_sandbox.sh",
-    "restart-sandbox": "npm run kill-sandbox && npm run start-sandbox"
+    "start-sandbox": "ganache-cli --flavor tezos --seed alice"
   },
   "repository": {
     "type": "git",
@@ -19,6 +15,7 @@
   },
   "keywords": [
     "tezos",
+    "ligo",
     "blockchain",
     "truffle"
   ],
